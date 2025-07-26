@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: streamhub
+    env: python
+    region: oregon             # or your nearest region
+    branch: main
+    buildCommand: ""          # leave blank: Render auto‑detects pip
+    startCommand: bash start.sh
+    autoDeploy: true
+    envVars:                  # add any ENV here later
+      - key: DATABASE_URL
+        sync: false
