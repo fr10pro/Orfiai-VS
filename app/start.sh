@@ -2,8 +2,8 @@
 set -e
 
 # 1) Create the needed folders if they’re missing
-mkdir -p app/templates
-mkdir -p app/static/banners
+mkdir -p templates
+mkdir -p static/banners
 
 # 2) (Optional) Pre‑migrate or seed your DB here, if you ever switch off SQLite
 
